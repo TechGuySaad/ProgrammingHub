@@ -2,17 +2,19 @@
 
 int main()
 {
-    float celsius, fahrenheit;
+float farenheit;
+printf("ENTER FARENHEIT VALUE :  ");
+scanf("%f",&farenheit);
 
-    /* Input temperature in fahrenheit */
-    printf("Enter temperature in Fahrenheit: ");
-    scanf("%f", &fahrenheit);
-
-    /* Fahrenheit to celsius conversion formula */
-    celsius = (fahrenheit - 32) * 5 / 9;
-
-    /* Print the value of celsius */
-    printf("%.2f Fahrenheit = %.2f Celsius", fahrenheit, celsius);
-
-    return 0;
+float celsius = (farenheit - 32)*5/9;
+printf("CELSIUS IS : %.1f\n",celsius);
+if(celsius>37)
+{
+printf("CELSIUS EXCEEDS HUMAN TEMPERATURE\n");
+}
+else
+{
+printf("CELSIUS DOESNOT EXCEEDS HUMAN TEMPERATURE");
+}
+return 0;
 }
